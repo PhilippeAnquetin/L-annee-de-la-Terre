@@ -1,10 +1,180 @@
-<html>
-    <head>
-        <title>L'ANNÉE DE LA TERRE</title> 
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ANNÉE DE LA TERRE - Roman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 50px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+        }
+
+        .book-content {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .book-image {
+            flex: 0 0 300px;
+            text-align: center;
+        }
+
+        .book-image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .book-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .book-description {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .book-description p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        .cta-button:active {
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .book-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-image {
+                flex: 0 0 auto;
+            }
+
+            .book-description p {
+                font-size: 1em;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
         <h1>L'ANNÉE DE LA TERRE</h1>
-        <img src="l-annee-de-la-terre.png" alt="L'ANNÉE DE LA TERRE" width="20%" >
-        <p>Dans un monde en pleine mutation, Léna, Paul, Sofia et Martin voient leurs vies basculer face aux bouleversements écologiques et politiques d'une année décisive. Entre les décisions gouvernementales audacieuses, les luttes industrielles et les résistances rurales, ces personnages se retrouvent pris dans un tourbillon de choix et de conséquences qui redéfiniront leurs destins. "L'année de la Terre" explore avec intensité les défis de notre époque et les réponses de ceux qui y font face, dans une fresque où l'humain et la nature se rencontrent, se confrontent, et s'influencent. Un récit profondément actuel.</p>
-    </body>
+        
+        <div class="book-content">
+            <div class="book-image">
+                <img src="l-annee-de-la-terre.png" alt="Couverture du livre L'ANNÉE DE LA TERRE">
+            </div>
+            
+            <div class="book-description">
+                <p>
+                    Dans un monde en pleine mutation, Léna, Paul, Sofia et Martin voient leurs vies basculer face aux bouleversements écologiques et politiques d'une année décisive. Entre les décisions gouvernementales audacieuses, les luttes industrielles et les résistances rurales, ces personnages se retrouvent pris dans un tourbillon de choix et de conséquences qui redéfiniront leurs destins.
+                </p>
+                <p>
+                    "L'année de la Terre" explore avec intensité les défis de notre époque et les réponses de ceux qui y font face, dans une fresque où l'humain et la nature se rencontrent, se confrontent, et s'influencent. Un récit profondément actuel.
+                </p>
+            </div>
+        </div>
+
+        <a href="https://www.thebookedition.com" class="cta-button" target="_blank" rel="noopener noreferrer">
+            Commander sur TheBookEdition
+        </a>
+
+        <div class="footer">
+            <p>&copy; Philippe Anquetin - L'année de la Terre</p>
+        </div>
+    </div>
+</body>
 </html>
